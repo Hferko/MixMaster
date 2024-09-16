@@ -7,11 +7,13 @@ const SearchForm = ({searchTerm}) => {
 
   return (
     <Wrapper>
-      <Form className="form">
-        <input type="search" name="search" className="form-input" defaultValue={searchTerm} />
+       <h2>Ital keresése név alapján</h2>
+      <Form className="form">      
+        <input type="search" name="search" className="form-input" defaultValue={searchTerm} placeholder=''/>
         <button type="submit" className="btn" disabled={isSubmitting}>
-          {isSubmitting ? 'Keressük...' : 'Lássam'}
+          {isSubmitting ? 'Ital keresése...' : 'Keresem'}
         </button>
+        <span>Ha ismered a coctail nevét, vagy kezdőbetűjét itt írd be</span>
       </Form>    
     </Wrapper>
   )

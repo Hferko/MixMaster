@@ -17,6 +17,10 @@ const Wrapper = styled.div`
   select{
     overflow:scroll;
   }
+  span{
+    font-style: italic;
+    margin-top: 4px;
+  }
 `;
 export default Wrapper;
 
